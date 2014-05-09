@@ -1,0 +1,30 @@
+OpenEmbedded/Yocto BSP layer for Blue Chip Technology's i.MX6 based platforms
+=============================================================================
+
+This layer provides support for Blue Chip Technology's i.MX6 based platforms
+for use with OpenEmbedded and/or Yocto Freescale's BSP layer.
+
+Supported boards are Blue Chip Technology's RE3 and RM3 (collectively known as Rx3)
+
+This layer depends on:
+
+URI: git://git.openembedded.org/openembedded-core
+branch: dora
+revision: HEAD
+
+URI: git://git.yoctoproject.org/meta-fsl-arm
+branch: dora
+revision: HEAD
+
+Contributing
+------------
+
+To contribute to this layer you should the patches for review to the
+maintainer.
+
+    dchirgwin@bluechiptechnology.co.uk
+
+Source code:
+
+    https://github.com/bluechiptechnology/meta-bct-rx3
+
