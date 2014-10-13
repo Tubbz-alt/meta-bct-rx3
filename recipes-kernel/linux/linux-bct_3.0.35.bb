@@ -9,7 +9,7 @@ SRC_URI = "git://github.com/bluechiptechnology/Rx3_linux_3.0.35_4.0.0.git \
            file://defconfig"
 
 LOCALVERSION = "-4.0.0+yocto"
-SRCREV = "v4.0.0.4"
+SRCREV = "${AUTOREV}"
 
 
 # GPU support patches
