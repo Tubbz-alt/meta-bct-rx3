@@ -1,0 +1,25 @@
+From 72960711f19e91435786af934df5089eec29d6b1 Mon Sep 17 00:00:00 2001
+From: David Chirgwin <dchirgwin@bluechiptechnology.co.uk>
+Date: Mon, 13 Oct 2014 11:02:42 +0100
+Subject: [PATCH] Remove battery icon from header bar
+
+---
+ session | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/session b/session
+index a3138b6..ced8af4 100644
+--- a/session
++++ b/session
+@@ -21,7 +21,7 @@ matchbox-desktop &
+ # doesn't have the feature "foo".
+ 
+ START_APPLETS=showdesktop,windowselector
+-END_APPLETS=clock,battery,$KEYBOARD_APPLET,systray,startup-notify,notify
++END_APPLETS=clock,$KEYBOARD_APPLET,systray,startup-notify,notify
+ END_APPLETS=openmoko-panel-gsm,$END_APPLETS # feature-phone
+ 
+ matchbox-panel --titlebar --start-applets $START_APPLETS --end-applets $END_APPLETS &
+-- 
+1.9.1
+
