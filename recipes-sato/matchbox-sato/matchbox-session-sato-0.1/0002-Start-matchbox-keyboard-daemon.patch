@@ -1,0 +1,24 @@
+From 35883249d006c3b74bd1e273acc6806ccf4b4e62 Mon Sep 17 00:00:00 2001
+From: David Chirgwin <dchirgwin@bluechiptechnology.co.uk>
+Date: Mon, 13 Oct 2014 15:26:26 +0100
+Subject: [PATCH] Start matchbox keyboard daemon
+
+---
+ session | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/session b/session
+index ced8af4..bd91e1b 100644
+--- a/session
++++ b/session
+@@ -16,6 +16,7 @@ fi
+ 
+ 
+ matchbox-desktop &
++matchbox-keyboard --daemon --fontptsize 20 &
+ 
+ # Lines containing feature-[foo] are removed at build time if the machine
+ # doesn't have the feature "foo".
+-- 
+1.9.1
+
