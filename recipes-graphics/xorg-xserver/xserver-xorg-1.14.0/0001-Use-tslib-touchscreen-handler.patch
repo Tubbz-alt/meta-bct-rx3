@@ -1,0 +1,45 @@
+diff --git a/05-tslib.conf b/05-tslib.conf
+new file mode 100644
+index 0000000..c0221f1
+--- a/config/05-tslib.conf
++++ b/config/05-tslib.conf
+@@ -0,0 +1,11 @@
++Section "InputDevice"
++    Identifier "tslib"
++    Driver "tslib"
++    Option "ScreenNumber"    "0"
++    Option "Width"        "800"
++    Option "Height"        "480"
++    Option "Rotate"        "NONE"
++    Option "TslibDevice"    "/dev/input/event0"
++    Option "Device"         "/dev/input/event0"
++    Option "CorePointer"
++EndSection
+diff --git a/Makefile.am~ b/Makefile.am
+index 69bdcf7..b10a37b 100644
+--- a/config/Makefile.am
++++ b/config/Makefile.am
+@@ -11,7 +11,7 @@ libconfig_la_LIBADD = $(UDEV_LIBS)
+ 
+ if XORG
+ xorgconfddir = $(datadir)/X11/$(XF86CONFIGDIR)
+-xorgconfd_DATA = 10-evdev.conf
++xorgconfd_DATA = 10-evdev.conf 05-tslib.conf
+ endif
+ 
+ else
+diff --git a/config/10-evdev.conf b/config/10-evdev.conf
+index 939d8a2..cc83ab2 100644
+--- a/config/10-evdev.conf
++++ b/config/10-evdev.conf
+@@ -32,9 +32,3 @@ Section "InputClass"
+         Driver "evdev"
+ EndSection
+ 
+-Section "InputClass"
+-        Identifier "evdev touchscreen catchall"
+-        MatchIsTouchscreen "on"
+-        MatchDevicePath "/dev/input/event*"
+-        Driver "evdev"
+-EndSection
+
