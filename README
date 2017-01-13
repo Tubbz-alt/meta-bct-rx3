@@ -9,11 +9,11 @@ Supported boards are Blue Chip Technology's RE3 and RM3 (collectively known as R
 This layer depends on:
 
 URI: git://git.openembedded.org/openembedded-core
-branch: dora
+branch: krogoth
 revision: HEAD
 
 URI: git://git.yoctoproject.org/meta-fsl-arm
-branch: dora
+branch: krogoth
 revision: HEAD
 
 Contributing
