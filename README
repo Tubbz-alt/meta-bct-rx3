@@ -8,11 +8,7 @@ Supported boards are Blue Chip Technology's RE3 and RM3 (collectively known as R
 
 This layer depends on:
 
-URI: git://git.openembedded.org/openembedded-core
-branch: krogoth
-revision: HEAD
-
-URI: git://git.yoctoproject.org/meta-fsl-arm
+URI: git://github.com/Freescale/fsl-community-bsp-base.git
 branch: krogoth
 revision: HEAD
 
@@ -22,7 +18,7 @@ Contributing
 To contribute to this layer you should the patches for review to the
 maintainer.
 
-    dchirgwin@bluechiptechnology.co.uk
+    krobinson67@bluechiptechnology.co.uk
 
 Source code:
 

@@ -1,23 +1,21 @@
 require recipes-bsp/u-boot/u-boot.inc
 
 LICENSE = "GPLv2+"
-LIC_FILES_CHKSUM = "file://COPYING;md5=4c6cde5df68eff615d36789dc18edd3b"
+LIC_FILES_CHKSUM = "file://Licenses/README;md5=C7383A594871C03DA76B3707929D2919"
 COMPATIBLE_MACHINE = "(bct-re3|bct-rm3)"
 
 PROVIDES = "u-boot"
 
-PV = "v2009.08+git${SRCPV}"
+PV = "v2015.04+git${SRCPV}"
 
 SRCREV = "${AUTOREV}"
-SRC_URI = "git://github.com/bluechiptechnology/Rx3_u-boot_2009.08_4.0.0.git"
+SRC_URI = "git://github.com/bluechiptechnology/u-boot-4.1.15-bctrx3.git"
 
 S = "${WORKDIR}/git"
 
-UBOOT_MAKE_TARGET = "u-boot.bin"
+UBOOT_MAKE_TARGET = "u-boot.img SPL"
 
 #Prevents problems trying to "strip" host tools
 EXTRA_OEMAKE += 'HOSTSTRIP=true'
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
-
-COMPATIBLE_MACHINE = "(mx6)"
