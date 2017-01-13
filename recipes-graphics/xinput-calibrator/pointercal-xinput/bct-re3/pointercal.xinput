@@ -1,0 +1,2 @@
+xinput set-int-prop "FocalTech Touch Screen" "Evdev Axis Calibration"  32 141 4013 3886 145
+xinput set-int-prop "FocalTech Touch Screen" "Evdev Axes Swap" 8 0
