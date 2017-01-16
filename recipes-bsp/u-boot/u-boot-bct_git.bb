@@ -1,7 +1,7 @@
 require recipes-bsp/u-boot/u-boot.inc
 
 LICENSE = "GPLv2+"
-LIC_FILES_CHKSUM = "file://Licenses/README;md5=C7383A594871C03DA76B3707929D2919"
+LIC_FILES_CHKSUM = "file://Licenses/README;md5=c7383a594871c03da76b3707929d2919"
 COMPATIBLE_MACHINE = "(bct-re3|bct-rm3)"
 
 PROVIDES = "u-boot"
